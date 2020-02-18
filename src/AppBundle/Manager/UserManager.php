@@ -24,8 +24,6 @@ class UserManager extends BaseManager
     {
         parent::__construct($doctrine);
         $this->repository = $this->em->getRepository('AppBundle:User');
-
-
     }
 
     public function delete($id)
@@ -48,19 +46,4 @@ class UserManager extends BaseManager
         $this->em->persist($user);
         $this->em->flush();
     }
-
-//    protected function getLoggedUserId()
-//    {
-////        $user = $this->get('security.token_storage')->getToken()->getUser();
-////        $userId = $user->getId();
-////        $this->em->get
-////        return $userId;
-//
-//        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
-//
-//        $user = $this->getUser();
-//        return $user;
-//    }
-
-
 }

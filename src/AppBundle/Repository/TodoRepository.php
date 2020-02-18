@@ -19,15 +19,6 @@ class TodoRepository extends EntityRepository
         ]);
     }
 
-//    public function allTodosOfUser($username){
-//        return $this->createQueryBuilder('u')
-//            ->where('u.byUser = :username ')
-//            ->orderBy('u.id', 'DESC')
-//            ->setParameter($username, $username)
-//            ->getQuery()
-//            ->getResult();
-//    }
-
     public function allTodosOfUser($username){
         return $this->findBy(
             ['byUser' => $username],
@@ -44,22 +35,8 @@ class TodoRepository extends EntityRepository
             ->setParameter('username', $username)
             ->getQuery()
             ->getSingleScalarResult();
-
-            //->getSingleScalarResult();
-            //->count();
     }
 
-
-
-
-//    public function deleteTodo($id, $username){
-//        return $this->createQueryBuilder('u')
-//            ->where('u.byUser = :username AND u.id = :id')
-//            ->setParameter($username, $username)
-//            ->setParameter($id, $id)
-//            ->getQuery();
-////            ->getResult();
-//    }
 
     public function deleteTodo($id, $username){
         return $this->findOneBy([

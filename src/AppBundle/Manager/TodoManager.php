@@ -1,13 +1,8 @@
 <?php
 
 namespace AppBundle\Manager;
-use AppBundle\Controller\UserController;
-use AppBundle\Entity\Todo;
-use AppBundle\Repository\TodoRepository;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-#use Doctrine\Bundle\DoctrineBundle\Registry as Doctrine;
+
 use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 /**
  * Todo Manager
@@ -29,7 +24,6 @@ class TodoManager extends BaseManager
         #deleting by id
         $this->em->remove($deleteTodo);
         $this->em->flush();
-
         //returns name of todo deleted
 
         return $deleteTodo->getName();
@@ -41,19 +35,10 @@ class TodoManager extends BaseManager
         $this->em->flush();
     }
 
-    public function todoCount($username){
-        //$this->repo->totalTodoCountByUser($username);
+    public function todoCount($username)
+    {
         return $this->repo->totalTodoCountByUser($username);
-
     }
-
-//    public function hasName($Name)
-//    {
-//        #returns a list of todos with same name
-//        $this->ss->findAllTodosByName($Name);
-//        #return $this->findAllTodosByName('$Name');
-//
-//    }
 
     public function show($username)
     {

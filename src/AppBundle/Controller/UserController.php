@@ -92,9 +92,7 @@ class UserController extends Controller
            'todoCount'=> $todoCount
            ));
     }
-
-
-
+    
     public function getLoggedUser()
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');

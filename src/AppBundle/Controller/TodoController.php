@@ -42,8 +42,6 @@ class TodoController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // $form->getData() holds the submitted values
-            // but, the original `$task` variable has also been updated
             $todo = $form->getData();
 
             $todo->setByUser($current_user);
@@ -55,7 +53,6 @@ class TodoController extends Controller
                 'Added todo with name '.$todo->getName()
             );
             return $this->redirectToRoute('display', array('username'=> $current_user));
-            #return $this->render('default/display.html.twig', array('username' => $current_user));
         }
         return $this->render('default/newtodo.html.twig', array('form' => $form->createView()));
     }
@@ -69,7 +66,6 @@ class TodoController extends Controller
     public function displayAction($username)
     {
         $username=$this->getUser()->getUsername();
-
         $todos=$this->todoManager->show($username);
 
         return $this->render('default/display.html.twig', array(
@@ -85,7 +81,6 @@ class TodoController extends Controller
      * @return Response
      */
     public function deleteAction($id, $username){
-
         $deletedTodoName= $this->todoManager->delete($id, $username);
         $this->addFlash(
             'notice',
@@ -93,6 +88,4 @@ class TodoController extends Controller
         );
         return $this->redirectToRoute('display', array('username' => $username));
     }
-
-
 }
