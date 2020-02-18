@@ -85,7 +85,7 @@ class UserController extends Controller
 
         $user_logged=$this->getLoggedUser();
         $todoCount=$this->todoManager->todoCount($username);
-
+        #var_dump($todoCount);
        return $this->render('default/profile.html.twig', array(
            'username' => $user_logged->getUsername(),
            'email' => $user_logged->getEmail(),

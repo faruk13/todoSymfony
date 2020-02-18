@@ -71,7 +71,7 @@ class TodoController extends Controller
         $username=$this->getUser()->getUsername();
 
         $todos=$this->todoManager->show($username);
-        
+
         return $this->render('default/display.html.twig', array(
             'todos' => $todos,
             'username' => $username));

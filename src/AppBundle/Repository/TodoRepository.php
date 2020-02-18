@@ -36,14 +36,15 @@ class TodoRepository extends EntityRepository
     }
 
     public function totalTodoCountByUser($username){
-        $noOfTodos= $this->createQueryBuilder('u')
-//            ->select('count(u.id)')
-//            ->from('AppBundle:Todo', 't')
-            ->where('u.byUser = :username')
+        //return 4;
+        return  $this->createQueryBuilder('u')
+            ->select('count(DISTINCT t.id)')
+            ->from('AppBundle:Todo', 't')
+            ->where('t.byUser = :username')
             ->setParameter('username', $username)
             ->getQuery()
-            ->getScalarResult();
-        return count($noOfTodos);
+            ->getSingleScalarResult();
+
             //->getSingleScalarResult();
             //->count();
     }

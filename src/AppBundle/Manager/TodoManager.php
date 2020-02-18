@@ -43,7 +43,8 @@ class TodoManager extends BaseManager
 
     public function todoCount($username){
         //$this->repo->totalTodoCountByUser($username);
-        $this->repo->totalTodoCountByUser($username);
+        return $this->repo->totalTodoCountByUser($username);
+
     }
 
 //    public function hasName($Name)
