@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" afterDir="false" />
-    </list>
+    <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581922470485</updated>
-      <workItem from="1581922474068" duration="39368000" />
+      <workItem from="1581922474068" duration="39471000" />
     </task>
     <servers />
   </component>
