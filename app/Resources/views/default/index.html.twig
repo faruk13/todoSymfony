@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block bodyMain %}
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Hi {{ username }}</h1>
+        </div>
+    </div>
+
+    <br>
+    <div align="center">
+        <a href="{{ path('profile', {'username': app.user.username}) }}/display", class="btn btn-secondary">Show All Todos</a>
+
+        <a href="{{ path('profile', {'username': app.user.username}) }}/newtodo", class="btn btn-success">Create Todo</a>
+    </div>
+    <br>
+
+
+
+
+{% endblock %}
+
+{% block stylesheets %}
+<style></style>
+{% endblock %}

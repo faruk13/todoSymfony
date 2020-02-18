@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block bodyMain %}
+    <br>
+    <div align="center">
+        <a href="{{ path('profile', {'username': app.user.username}) }}/display", class="btn btn-secondary">Show All Todos</a>
+
+        <a href="{{ path('profile', {'username': app.user.username}) }}/newtodo", class="btn btn-success">Create Todo</a>
+    </div>
+    {% if todos %}
+    <h2 class="page-header" >Todos: </h2>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Todo</th>
+            <th scope="col">Description</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% else %}
+            <h3>No todos yet!</h3>
+
+        {% endif %}
+        {% for todo in todos %}
+        <tr>
+            <th scope="row">{{ loop.index }}</th>
+            <td>{{ todo.name }}</td>
+            <td>{{ todo.description }}</td>
+            <td>{{ todo.priority }}</td>
+            <td>
+                <a href="{{ path('profile', {'username': app.user.username}) }}/delete/{{ todo.id }}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
