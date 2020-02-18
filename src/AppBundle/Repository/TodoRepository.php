@@ -26,6 +26,15 @@ class TodoRepository extends EntityRepository
             );
     }
 
+//    public function allTodosOfUserByPriority($username){
+//        return $this->createQueryBuilder('u')
+//            ->select('t.priority')
+//            ->from('AppBundle:Todo', 't')
+//            ->where('t.byUser= :username')
+//            ->addGroupBy('t.priority')
+//
+//    }
+
     public function totalTodoCountByUser($username){
         //return 4;
         return  $this->createQueryBuilder('u')

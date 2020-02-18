@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581922470485</updated>
-      <workItem from="1581922474068" duration="40505000" />
+      <workItem from="1581922474068" duration="42104000" />
     </task>
     <servers />
   </component>

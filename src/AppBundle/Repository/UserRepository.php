@@ -27,4 +27,7 @@ class UserRepository extends \Doctrine\ORM\EntityRepository implements UserLoade
             ->getOneOrNullResult();
 
     }
+    #above function allows to take either username or email to login
+    #which again dont work if "username" parameter is removed from
+    #security.yml in providers
 }
