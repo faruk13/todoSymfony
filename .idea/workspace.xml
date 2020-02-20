@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/BaseControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/LoginControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/TodoControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/UserControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Repository/TodoRepositoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/userLog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userLog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/BaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/BaseManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/LoginControllerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +77,7 @@
       <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XvNBBeyE218BO1XiNcdliDZQ3Z" />
@@ -75,12 +91,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/views/default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/AppBundle/Controller" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/AppBundle/Controller" />
       <recent name="$PROJECT_DIR$/app/Resources/views/default" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LoginControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AppBundle\Tests\Controller\LoginControllerTest" file="$PROJECT_DIR$/tests/AppBundle/Controller/LoginControllerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.LoginControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581922470485</updated>
-      <workItem from="1581922474068" duration="42104000" />
+      <workItem from="1581922474068" duration="69315000" />
     </task>
     <servers />
   </component>
@@ -100,6 +128,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="271" y="26" key="#LoginControllerTest" timestamp="1582092473482">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="271" y="26" key="#LoginControllerTest/0.0.1280.800@0.0.1280.800" timestamp="1582092473482" />
+    <state x="269" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582175591859">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="269" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1582175591859" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582006264680">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -108,10 +144,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581999867384" />
-    <state x="461" y="326" key="NewPhpFileDialog" timestamp="1582006007064">
+    <state x="461" y="326" key="NewPhpFileDialog" timestamp="1582097150108">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="461" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1582006007064" />
+    <state x="461" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1582097150108" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1582094358990">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1280.800@0.0.1280.800" timestamp="1582094358990" />
     <state x="402" y="33" key="refactoring.ChangeSignatureDialog" timestamp="1581938566956">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

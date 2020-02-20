@@ -14,3 +14,13 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+#
+#
+#doctrine:
+#    # ...
+#    dbal:
+#        host:     127.0.0.1
+#        dbname:   userdb
+#        user:     root
+#        password: ""
+#        database_path: '%kernel.project_dir%/test/userdb'

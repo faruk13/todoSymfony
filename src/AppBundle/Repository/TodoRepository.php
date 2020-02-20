@@ -2,8 +2,8 @@
 
 namespace AppBundle\Repository;
 
-use AppBundle\Entity\Todo;
 use Doctrine\ORM\EntityRepository;
+
 /**
  * TodoRepository
  *
@@ -12,12 +12,6 @@ use Doctrine\ORM\EntityRepository;
  */
 class TodoRepository extends EntityRepository
 {
-    public function findAllTodosByName($Name)
-    {
-        return $this->findBy([
-            'name' => $Name
-        ]);
-    }
 
     public function allTodosOfUser($username){
         return $this->findBy(
@@ -25,15 +19,6 @@ class TodoRepository extends EntityRepository
             ['id' => 'DESC']
             );
     }
-
-//    public function allTodosOfUserByPriority($username){
-//        return $this->createQueryBuilder('u')
-//            ->select('t.priority')
-//            ->from('AppBundle:Todo', 't')
-//            ->where('t.byUser= :username')
-//            ->addGroupBy('t.priority')
-//
-//    }
 
     public function totalTodoCountByUser($username){
         //return 4;

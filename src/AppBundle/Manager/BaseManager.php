@@ -3,7 +3,6 @@
 
 namespace AppBundle\Manager;
 
-#use Doctrine\Bundle\DoctrineBundle\Registry as Doctrine;
 use Doctrine\Common\Persistence\ManagerRegistry as Doctrine;
 
 /**
