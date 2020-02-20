@@ -3,14 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/display.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/display.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/TodoManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -103,7 +107,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581922470485</updated>
-      <workItem from="1581922474068" duration="71740000" />
+      <workItem from="1581922474068" duration="72008000" />
+      <workItem from="1582200914793" duration="3281000" />
     </task>
     <servers />
   </component>
@@ -131,14 +136,19 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="461" y="326" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1582097150108" />
+    <state x="304" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1582200916549">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="304" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1582200916549" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1582094358990">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1280.800@0.0.1280.800" timestamp="1582094358990" />
-    <state x="402" y="33" key="refactoring.ChangeSignatureDialog" timestamp="1581938566956">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="402" y="26" key="refactoring.ChangeSignatureDialog" timestamp="1582201542620">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="402" y="33" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1581938566956" />
+    <state x="402" y="26" key="refactoring.ChangeSignatureDialog/0.23.1280.777@0.23.1280.777" timestamp="1582201542620" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582182880979">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

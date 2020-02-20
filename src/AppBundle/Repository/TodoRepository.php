@@ -3,6 +3,7 @@
 namespace AppBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 
 /**
  * TodoRepository
@@ -12,13 +13,33 @@ use Doctrine\ORM\EntityRepository;
  */
 class TodoRepository extends EntityRepository
 {
+//
+//    public function allTodosOfUser($username){
+//        return $this->findBy(
+//            ['byUser' => $username],
+//            ['id' => 'DESC']
+//            );
+//    }
 
-    public function allTodosOfUser($username){
-        return $this->findBy(
-            ['byUser' => $username],
-            ['id' => 'DESC']
-            );
-    }
+public function allTodosOfUser($username, $page_num=0){
+    $limit = 5;
+
+    $qb = $this->createQueryBuilder('td')
+        ->select('td.id','td.name','td.description','td.priority')
+        //->from('AppBundle:Todo', 'td')
+        ->where('td.byUser = :username')
+        ->addOrderBy('td.id','desc')
+        ->setParameter('username',$username)
+        ->setFirstResult($page_num * $limit)
+        ->setMaxResults($limit);
+//        $query = $qb->getQuery();
+//        $sql = "select status, name,id,due_date as dueDate,created_at, description, category, priority as createdAt from todo where userId='rahul' group by status,dueDate,priority order by status,dueDate";
+//        return $this->getEntityManager()->getConnection()->query($sql);
+
+    $paginator = new Paginator($qb,false);
+    $paginator->setUseOutputWalkers(false);
+    return $paginator;
+}
 
     public function totalTodoCountByUser($username){
         //return 4;

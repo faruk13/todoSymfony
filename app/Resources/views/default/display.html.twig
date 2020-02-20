@@ -24,12 +24,16 @@
             <h3>No todos yet!</h3>
 
         {% endif %}
+    {% set index= (thisPage-1)*5 %}
         {% for todo in todos %}
         <tr>
-            <th scope="row">{{ loop.index }}</th>
+
+            {% set index= index+1 %}
+            <th scope="row">{{ index }}</th>
             <td>{{ todo.name }}</td>
             <td>{{ todo.description }}</td>
             <td>{{ todo.priority }}</td>
+
             <td>
                 <a href="{{ path('profile', {'username': app.user.username}) }}/delete/{{ todo.id }}" class="btn btn-danger">Delete</a>
             </td>
@@ -38,4 +42,23 @@
         </tbody>
     </table>
 
+{% endblock %}
+{% block footer %}
+    <nav aria-label="...">
+        {% if maxPages > 1 %}
+            <ul class="pagination justify-content-center">
+                {% for i in 1..maxPages %}
+                    {% if i == thisPage %}
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="{{ path('display', {'username': app.user.username}) }}?page_num={{ i }}">{{ i }} <span class="sr-only">(current)</span></a>
+                        </li>
+                    {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ path('display', {'username': app.user.username}) }}?page_num={{ i }}">{{ i }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </nav>
 {% endblock %}

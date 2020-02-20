@@ -60,10 +60,11 @@ class TodoController extends Controller
 
     /**
      * @Route("/profile/{username}/display", name="display")
+     * @param Request $request
      * @param $username
      * @return Response
      */
-    public function displayAction($username)
+    public function displayAction(Request $request, $username)
     {
         $user_logged_username=$this->getUser()->getUsername();
 
@@ -72,12 +73,22 @@ class TodoController extends Controller
             return $this->redirectToRoute('display', array('username' => $user_logged_username));
         }
 
-        $todos=$this->todoManager->show($username);
+        $page_num = $request->get('page_num');
+        if(!$page_num)
+            $page_num = 1;
+
+        $todos=$this->todoManager->show($username, $page_num);
+
+        $limit = 5;
+        $maxPages = ceil($todos->count()/$limit);
 
         return $this->render('default/display.html.twig', array(
             'todos' => $todos,
-            'username' => $username));
-
+            'username' => $username,
+            'thisPage'=>$page_num,
+            'maxPages'=>$maxPages
+            )
+        );
     }
 
     /**
