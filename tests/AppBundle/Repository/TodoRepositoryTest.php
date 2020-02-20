@@ -2,6 +2,7 @@
 namespace Tests\AppBundle\Repository;
 
 use AppBundle\Entity\Todo;
+use AppBundle\Entity\User;
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
@@ -40,6 +41,22 @@ class TodoRepositoryTest extends KernelTestCase
         $this->assertGreaterThanOrEqual(3, $todos);
     }
 
+    public function testDeleteUser()
+    {
+        //registered user added before in controller tests
+        //deleting the same user here
+        $deleteUser=$this->entityManager
+            ->getRepository(User::class)
+            ->findOneBy([
+                'username'=>'abc7'
+            ]);
+        #var_dump($deleteUser);die("asasasas");
+        if(is_null($deleteUser)==false) {
+            $this->entityManager->remove($deleteUser);
+            $this->entityManager->flush();
+        }
+
+    }
     /**
      * {@inheritDoc}
      */

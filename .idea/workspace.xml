@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784327f8-a7c7-465a-a840-dc36662149f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/BaseControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/LoginControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/TodoControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/UserControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Repository/TodoRepositoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/userLog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/userLog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/BaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/BaseManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Manager/UserManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TodoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/LoginControllerTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Repository/TodoRepositoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Repository/TodoRepositoryTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581922470485</updated>
-      <workItem from="1581922474068" duration="69315000" />
+      <workItem from="1581922474068" duration="70903000" />
     </task>
     <servers />
   </component>
@@ -156,9 +140,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="402" y="33" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1581938566956" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582004168205">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582182880979">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1582004168205" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1582182880979" />
   </component>
 </project>

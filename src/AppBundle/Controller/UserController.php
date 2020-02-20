@@ -83,6 +83,12 @@ class UserController extends Controller
     public function profileAction($username){
 
         $user_logged=$this->getLoggedUser();
+        if($username != $user_logged->getUsername()){
+            $this->addFlash('notice',"Can't access other user's profile!");
+            return $this->redirectToRoute('profile', array('username' => $user_logged->getUsername()));
+        }
+
+
         $todoCount=$this->todoManager->todoCount($username);
         #var_dump($todoCount);
        return $this->render('default/profile.html.twig', array(
