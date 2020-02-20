@@ -65,7 +65,13 @@ class TodoController extends Controller
      */
     public function displayAction($username)
     {
-        $username=$this->getUser()->getUsername();
+        $user_logged_username=$this->getUser()->getUsername();
+
+        if($username != $user_logged_username){
+            $this->addFlash('notice',"Can't access other user's todo list!");
+            return $this->redirectToRoute('display', array('username' => $user_logged_username));
+        }
+
         $todos=$this->todoManager->show($username);
 
         return $this->render('default/display.html.twig', array(
